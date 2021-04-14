@@ -5,9 +5,11 @@ A calendar is a chart or device which displays the date and the day of the week,
 
 ### Zeller's congruence
 Zeller’s congruence is an algorithm devised by Christian Zeller to calculate the day of the week for any Julian or Gregorian calendar date. It can be considered to be based on the conversion between Julian day and the calendar date. It is used to find the day of the week for any date. 
+
 For the Gregorian calender it is:
 
 <img src="https://user-images.githubusercontent.com/80700297/114757124-17c01500-9d79-11eb-9b82-f4638104de7c.PNG" width="700" height="75">
 
-For the Julian calendar it is
+For the Julian calendar it is: 
+
 
