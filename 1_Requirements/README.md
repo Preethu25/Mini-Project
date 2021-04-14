@@ -29,3 +29,22 @@ In this algorithm January and February are counted as months 13 and 14 of the pr
 For an ISO week date Day-of-Week d (1 = Monday to 7 = Sunday), use
 
 <img src="https://user-images.githubusercontent.com/80700297/114760123-a08c8000-9d7c-11eb-96e8-9cb8eb47e8e3.PNG" width="300" height="50"> 
+
+## Objective
+To implement a calendar of particular entered year, to add events and also to search events which are specified.
+
+## 4W's and 1H
+### Who:
+It is a simple application which can be used by anyone.
+
+### What:
+It is used to view date, day and also special events of particular year.
+
+### When:
+It can be used as a reminder to know the special events of our personal life or to know specific task to be performed in professional life.
+
+### Where:
+It is used in many smart devices like mobile phone, digital watches etc.
+
+### How:
+This project is implemented using multiple files which consists of various files in order to obtain expected output.
