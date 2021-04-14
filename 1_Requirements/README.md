@@ -53,11 +53,8 @@ This project is implemented using multiple files which consists of various files
 |  ID   |                 Description                     | Category |    Status   |
 | ----- | ----------------------------------------------- | -------- | ----------- |
 | HR_01 |  The user gives an input to enter into calendar | Tehnical | Implemented |
-| ----- | ----------------------------------------------- | -------- | ----------- |
 | HR_02 |          To search events in calendar           | Tehnical | Implemented |
-| ----- | ----------------------------------------------- | -------- | ----------- |
 | HR_03 |           To add events to calendar             | Tehnical | Implemented |
-| ----- | ----------------------------------------------- | -------- | ----------- |
 | HR_04 |            To quit the calendar                 | Tehnical | Implemented |
 
 ## Low-Level Requirements
