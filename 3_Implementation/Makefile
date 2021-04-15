@@ -2,12 +2,13 @@ PROJ_NAME = Calendar
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 SRC =main.c\
-src/calendar.c src/event.c src/functions.c
+src/functions.c
 
 
-Bank_SRC = test.c
+SRC = test.c
 
-TEST_SRC = test/test.c \
+TEST_SRC = src/functions.c 
+test/test.c \
 unity/unity.c 
 INC_H = inc
 INC_T = unity
