@@ -1,8 +1,7 @@
-
 PROJ_NAME = Calendar
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
-BUILD = build
+header_SRC = test.c
 
 SRC = src/functions.c 
 
