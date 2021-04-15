@@ -1,33 +1,19 @@
-#include <stdbool.h>
-#ifndef FUNCTIONS_H_
-#define FUNCTIONS_H_
-#define KNRM  "\x1B[0m"
-#define KRED  "\x1B[31m"
-#define KGRN  "\x1B[32m"
-#define KYEL  "\x1B[33m"
-#define KBLU  "\x1B[34m"
-#define KMAG  "\x1B[35m"
-#define KCYN  "\x1B[36m"
-#define KWHT  "\x1B[37m"
-#define RESET "\x1B[0m"   //Reset Color
+#ifndef FUNCTIONS_H
+#define FUNCTIONS_H
 
-// define functions prototypes here
-void locate(int x, int y);
-void calendar();
-void search();
-void add();
-int StartSpace();
-int leapyear();
-void printCal();
-void changeMonth(char temp);
+typedef struct {
+  int day;
+  int month;
+  int year;
+  char note[255];
+} Note;
 
-void getDateFile();
-void addEvent();
-void writeEvent();
-void eventDetail();
-void listDate();
-void editEvent();
-void deleteEvent();
-bool pin(int y, int m, int d);
+int isLeapYear( int year );        /* True if leap year */
+int leapYears( int year );         /* The number of leap year */
+int todayOf( int y, int m, int d); /* The number of days since the beginning of the year */
+long days( int y, int m, int d);   /* Total number of days */
+void calendar(int y, int m);       /* display calendar at m y */
+int getDayNumber(int d,int m,int y);
+char *getName(int day);
 
 #endif
