@@ -25,7 +25,7 @@ char *months[] =
     "\n\t  December"
 };
 
-void calendar(){
+void calendar(int year, int month){
     locate(10, 5);
     printf("Input year and month (YYYY MM) : \t");
     scanf("%d %d", &year, &month);
