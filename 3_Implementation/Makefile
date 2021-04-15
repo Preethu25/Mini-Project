@@ -6,8 +6,6 @@ BUILD = build
 
 SRC = src/calendar.c src/event.c src/functions.c 
 
-SRC = test.c
-
 TEST_SRC =  test/test.c \
 unity/unity.c 
 INC_H = inc
