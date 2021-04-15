@@ -4,7 +4,7 @@ TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 BUILD = build
 
-SRC = src/calendar.c src/event.c src/functions.c 
+SRC = src/functions.c 
 
 TEST_SRC =  test/test.c \
 unity/unity.c 
