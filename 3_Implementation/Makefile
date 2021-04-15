@@ -6,7 +6,7 @@ src/calendar.c src/event.c src/functions.c
 
 
 TEST_SRC = src/calendar.c src/event.c src/functions.c\ 
-test/test.c \
+test/test.c\
 unity/unity.c 
 INC_H = inc
 INC_T = unity
