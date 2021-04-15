@@ -7,7 +7,7 @@ void setUp(){}
 void tearDown(){}
 
 
-void Test_daynumber(){
+void Test_calendar(){
     TEST_ASSERT_EQUAL(5,daynum(1,1,2021));
     TEST_ASSERT_EQUAL(6, daynum(2,1,2021));
     TEST_ASSERT_EQUAL(0, daynum(3,1,2021));
