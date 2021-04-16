@@ -37,7 +37,7 @@ int test_main(void)
 
 /* Run Test functions */
   RUN_TEST(calendar);
-  RUN_TEST(getname);
+  RUN_TEST(getName);
   RUN_TEST(isLeapYear);
 
 
