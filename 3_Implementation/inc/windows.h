@@ -34,9 +34,6 @@
 #include <stdarg.h>
 #if !(defined NOGDI || defined  _WINGDI_H)
 #endif
-#ifndef _WINUSER_H
-#include <winuser.h>
-#endif
 #ifndef _WINNLS_H
 #include <winnls.h>
 #endif
