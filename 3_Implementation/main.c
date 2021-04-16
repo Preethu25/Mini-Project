@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "functions.h"
+#include "windows.h"
 
 int main(){
     ClearConsoleToColors(15, 1);
