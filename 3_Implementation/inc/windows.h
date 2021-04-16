@@ -33,7 +33,6 @@
 
 #include <stdarg.h>
 #if !(defined NOGDI || defined  _WINGDI_H)
-#include <wingdi.h>
 #endif
 #ifndef _WINUSER_H
 #include <winuser.h>
