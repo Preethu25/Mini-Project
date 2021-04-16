@@ -1,3 +1,5 @@
+[![Code Quality - Static Code - Cppcheck](https://github.com/Preethu25/Mini-Project/actions/workflows/cpp_check.yml/badge.svg)](https://github.com/Preethu25/Mini-Project/actions/workflows/cpp_check.yml)
+
 # Calendar_app
 
 ## Introduction 
