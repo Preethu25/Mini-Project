@@ -7,10 +7,10 @@ void setUp(){}
 void tearDown(){}
 
 
-void Test_getDayNumber(){
-    TEST_ASSERT_EQUAL(5,getDayNumber(16,02,2005));
-    TEST_ASSERT_EQUAL(6, getDayNumber(05,11,1990));
-    TEST_ASSERT_EQUAL(0, getDayNumber(28,06,2010));
+void Test_calendar(){
+    TEST_ASSERT_EQUAL(5,calendar(2005,08));
+    TEST_ASSERT_EQUAL(6, calendar(1965,22));
+    TEST_ASSERT_EQUAL(0, calendar(2020,02));
 }
 
 }
@@ -20,7 +20,7 @@ int test_main(void)
   UNITY_BEGIN();
 
 /* Run Test functions */
-  RUN_TEST(Test_getDayNumber);
+  RUN_TEST(calendar);
 
 
   /* Close the Unity Test Framework */
