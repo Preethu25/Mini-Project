@@ -72,7 +72,7 @@ void calendar(int y, int m){
     printf("\n     %s %d\n%s\n", NameOfMonth[m], y, Week);
  
     for(i=0;i<weekOfTopDay;i++)
-        printf("   ");
+        printf("     ");
     for(i=weekOfTopDay,day=1;day <= DayOfMonth[m];i++,day++){
         hasNote = 0;
         for (j = 0; j < len; j++) {
