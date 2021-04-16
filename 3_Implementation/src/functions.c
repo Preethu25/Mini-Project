@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "functions.h" 
+#include "windows.h"
 COORD xy = {0, 0};
 
 void gotoxy (int x, int y)
