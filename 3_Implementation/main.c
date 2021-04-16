@@ -1,66 +1,65 @@
-# ifndef WIN32_LEAN_AND_MEAN
-#   define WIN32_LEAN_AND_MEAN
-# endif
-# ifndef VC_EXTRALEAN
-#   define VC_EXTRALEAN
-# endif
-# ifndef NOMINMAX
-#   define NOMINMAX
-# endif
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 #include "functions.h"
-#include <process.h>
-
-int main(){
-    ClearConsoleToColors(15, 1);
-    SetConsoleTitle("Calender Project - Programming-technique.blogspot.com");
-    int choice;
-    char ch = 'a';
-    while(1){
-        system("cls");
-        printf("1. Find Out the Day\n");
-        printf("2. Print all the day of month\n");
-        printf("3. Add Note\n");
-        printf("4. EXIT\n");
-        printf("ENTER YOUR CHOICE : ");
-        scanf("%d",&choice);
-        system("cls");
-        switch(choice){
-            case 1:
-                printf("Enter date (DD MM YYYY) : ");
-                scanf("%d %d %d",&date.dd,&date.mm,&date.yy);
-                printf("Day is : %s",getDay(date.dd,date.mm,date.yy));
-                printf("\nPress any key to continue......");
-                getchar();
-                break;
-            case 2 :
-                printf("Enter month and year (MM YYYY) : ");
-                scanf("%d %d",&date.mm,&date.yy);
-                system("cls");
-                while(ch!='q'){
-                    printMonth(date.mm,date.yy,20,5);
-                    ch = getchar();
-                    if(ch == 'n'){
-                        increase_month(&date.mm,&date.yy);
-                        system("cls");
-                        printMonth(date.mm,date.yy,20,5);
-                    }else if(ch == 'p'){
-                        decrease_month(&date.mm,&date.yy);
-                        system("cls");
-                        printMonth(date.mm,date.yy,20,5);
-                    }else if(ch == 's'){
-                        showNote(date.mm);
-                        system("cls");
-                    }
-                }
-                break;
-            case 3:
-                AddNote();
-                break;
-            case 4 :
-                exit(0);
+ 
+int main(int argc, char* argv[])
+{
+    int year,month, day;
+    char choice;
+    Note note;
+    FILE *fp;
+ 
+    fp = fopen("note.bin", "r");
+    if (fp == NULL) {
+      fp = fopen("note.bin", "w");
+    } 
+    fclose(fp);
+ 
+    while(1) 
+    {
+      printf("1. Find the day\n");
+      printf("2. Print calendar of a month\n");
+      printf("3. Add Note\n");
+      printf("4. Exit\n");
+      printf("Enter your choice: ");
+      scanf("\n%c", &choice);
+      switch(choice) 
+      {
+        case '1':
+        printf("Enter the day, month and year: ");
+        scanf("%d %d %d", &day, &month, &year);
+        printf("The day is : %s\n", getName(getDayNumber(day, month, year)));
+        break;
+        case '2':
+        printf("Enter the month and year: ");
+        scanf("%d %d", &month, &year);
+        printf("Please enter 's' to see the notes\n Press any other key to continue\n");
+        calendar(year, month);
+        break;
+        case '3':
+        printf("Enter the day, month and year: ");
+        scanf("%d %d %d", &note.day, &note.month, &note.year);
+        fflush(stdin);
+        printf("Enter the note: ");
+        fgets(note.note, 255, stdin);
+        fp = fopen("note.bin", "a+");
+        if (fp == NULL) {
+          printf("File note.bin can not be opened\n");
+          exit(1);
         }
+        fwrite(&note, sizeof(Note), 1, fp);
+        printf("Note added sucessfully\n");
+        fclose(fp);
+        break;
+        case '4':
+        printf("Bye!!");
+        exit(0);
+        break;
+        default:
+        printf("Not a valid option\n");
+        break;
+      }
     }
     return 0;
 }
