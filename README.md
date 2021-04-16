@@ -1,3 +1,4 @@
+[![C/C++ CI - Build Status](https://github.com/Preethu25/Mini-Project/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Preethu25/Mini-Project/actions/workflows/c-cpp.yml)
 
 
 # Calendar_App
