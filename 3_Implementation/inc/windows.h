@@ -32,7 +32,6 @@
 #else
 
 #include <stdarg.h>
-#include <winbase.h>
 #if !(defined NOGDI || defined  _WINGDI_H)
 #include <wingdi.h>
 #endif
