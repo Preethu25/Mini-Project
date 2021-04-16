@@ -8,7 +8,6 @@
 #   define NOMINMAX
 # endif
 #include<stdio.h>
-#include <windows.h>
 #include <stdbool.h>
 #ifndef FUNCTIONS_H_
 #define FUNCTIONS_H_
