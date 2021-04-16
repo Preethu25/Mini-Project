@@ -10,12 +10,10 @@
 
 
 ## Introduction 
-Mini-project to display calendar dynamically and add events/notes to dates and to search events which are stored.
-
-## Overview
-**Zeller's congruence** - An algorithm devised by Christian Zeller to calculate the day of the week for any Julian or Gregorian calendar date. [Wikipedia](https://en.wikipedia.org/wiki/Zeller%27s_congruence)
-
-**Linear Search** - Method for finding a target value within a list. [Wikipedia](https://en.wikipedia.org/wiki/Linear_search) / [GeeksforGeeks](https://www.geeksforgeeks.org/linear-search/)
+This mini project on Calendar in C programming language is a console application without graphics. Basically three operations can be done in this calendar application.
+- To find out the day corresponding to a given date, month and year 
+- To list the days and dates of any month of any year.
+- To add events to calendar and to view events in that particular month.
 
 ![image](https://user-images.githubusercontent.com/80700297/114712319-97d08580-9d4d-11eb-836c-486ad93db118.png)
 
