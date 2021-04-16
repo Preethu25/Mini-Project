@@ -4,6 +4,8 @@
 
 [![Contribution Check - Git Inspector](https://github.com/Preethu25/Mini-Project/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/Preethu25/Mini-Project/actions/workflows/gitinspector.yml)
 
+[![Unit Testing](https://github.com/Preethu25/Mini-Project/actions/workflows/unit-test.yml/badge.svg)](https://github.com/Preethu25/Mini-Project/actions/workflows/unit-test.yml)
+
 # Calendar_App
 
 ## Introduction 
