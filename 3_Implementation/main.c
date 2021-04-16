@@ -1,57 +1,66 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
+# ifndef WIN32_LEAN_AND_MEAN
+#   define WIN32_LEAN_AND_MEAN
+# endif
+# ifndef VC_EXTRALEAN
+#   define VC_EXTRALEAN
+# endif
+# ifndef NOMINMAX
+#   define NOMINMAX
+# endif
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
 #include "functions.h"
 
-int main()
-{
-    char *dir = "data";
-    CreateDirectory(dir, NULL);
-
-    system("cls"); // Clears The Screen
-    locate(30, 5);
-    printf(KCYN "C FOR CALENDAR" RESET);
-
-    time_t now = time(NULL);
-    struct tm *t = localtime(&now);
-    char buffer[80];
-    locate(20, 7);
-    strftime(buffer, 80, "%A, %b %d, %Y | %I:%M %p", t); // format current datetime ( Monday, June 15, 2009 | 1:45:30 PM )
-    printf("%s\n\n", buffer); // display formatted datetime
-
-    char opt;
-
-    do{
-        locate(20, 10);
-        printf("[a] View Calendar");
-        locate(20, 11);
-        printf("[b] Search Events");
-        locate(20, 12);
-        printf("[c] Add Events");
-        locate(20, 13);
-        printf("[d] Exit");
-        locate(20, 15);
-        printf("Enter your option : \t");
-        opt = _getch();
+int main(){
+    ClearConsoleToColors(15, 1);
+    SetConsoleTitle("Calender Project - Programming-technique.blogspot.com");
+    int choice;
+    char ch = 'a';
+    while(1){
         system("cls");
-        if(opt >= 'a' || opt <= 'd') break;
-    }while(1);    // Asks input until the input is between 0 and 5
-
-    switch (opt){           //Go to user selected option
-        case 'a' :
-            calendar();
-            break;
-        case 'b' :
-            search();
-            break;
-        case 'c' :
-            add();
-            break;
-        case 'd' :
-            exit(EXIT_SUCCESS);
-        default :
-            main();
+        printf("1. Find Out the Day\n");
+        printf("2. Print all the day of month\n");
+        printf("3. Add Note\n");
+        printf("4. EXIT\n");
+        printf("ENTER YOUR CHOICE : ");
+        scanf("%d",&choice);
+        system("cls");
+        switch(choice){
+            case 1:
+                printf("Enter date (DD MM YYYY) : ");
+                scanf("%d %d %d",&date.dd,&date.mm,&date.yy);
+                printf("Day is : %s",getDay(date.dd,date.mm,date.yy));
+                printf("\nPress any key to continue......");
+                getchar();
+                break;
+            case 2 :
+                printf("Enter month and year (MM YYYY) : ");
+                scanf("%d %d",&date.mm,&date.yy);
+                system("cls");
+                while(ch!='q'){
+                    printMonth(date.mm,date.yy,20,5);
+                    ch = getchar();
+                    if(ch == 'n'){
+                        increase_month(&date.mm,&date.yy);
+                        system("cls");
+                        printMonth(date.mm,date.yy,20,5);
+                    }else if(ch == 'p'){
+                        decrease_month(&date.mm,&date.yy);
+                        system("cls");
+                        printMonth(date.mm,date.yy,20,5);
+                    }else if(ch == 's'){
+                        showNote(date.mm);
+                        system("cls");
+                    }
+                }
+                break;
+            case 3:
+                AddNote();
+                break;
+            case 4 :
+                exit(0);
+        }
     }
     return 0;
 }
-
