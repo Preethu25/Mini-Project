@@ -1,6 +1,6 @@
 # Structure Diagrams
 ## High-Level Structure Diagram
-![image](https://user-images.githubusercontent.com/80700297/114827844-cc445000-9de6-11eb-9867-56f04cb03a71.png)
+![image](https://user-images.githubusercontent.com/80700297/115003817-cb352080-9ec3-11eb-8256-642306f5253e.png)
 
 ## Low-Level Structure Diagram
 
