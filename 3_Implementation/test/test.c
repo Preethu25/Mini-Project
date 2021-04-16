@@ -8,9 +8,9 @@ void tearDown(){}
 
 
 void Test_calendar(){
-    TEST_ASSERT_EQUAL(5,calendar(2005,08));
+    TEST_ASSERT_EQUAL(5,calendar(2005,8));
     TEST_ASSERT_EQUAL(6,calendar(1965,22));
-    TEST_ASSERT_EQUAL(0,calendar(2020,02));
+    TEST_ASSERT_EQUAL(0,calendar(2020,2));
 }
 
 void Test_getName(){
