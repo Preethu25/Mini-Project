@@ -9,18 +9,18 @@ void tearDown(){}
 
 void Test_calendar(){
     TEST_ASSERT_EQUAL(5,calendar(2005,08));
-    TEST_ASSERT_EQUAL(6, calendar(1965,22));
-    TEST_ASSERT_EQUAL(0, calendar(2020,02));
+    TEST_ASSERT_EQUAL(6,calendar(1965,22));
+    TEST_ASSERT_EQUAL(0,calendar(2020,02));
 }
 
 void Test_getName(){
- TEST_ASSERT_EQUAL_CHAR_ARRAY("Sunday",getname(0),7);
- TEST_ASSERT_EQUAL_CHAR_ARRAY("Monday",getname(1),8);
- TEST_ASSERT_EQUAL_CHAR_ARRAY("Tuesday",getname(2),5);
- TEST_ASSERT_EQUAL_CHAR_ARRAY("Wednesday",getname(3),5);
- TEST_ASSERT_EQUAL_CHAR_ARRAY("Thursday",getname(4),3);
- TEST_ASSERT_EQUAL_CHAR_ARRAY("Friday",getname(5),4);
- TEST_ASSERT_EQUAL_CHAR_ARRAY("Saturday",getname(6),4);
+ TEST_ASSERT_EQUAL_CHAR_ARRAY("Sunday",getName(0),7);
+ TEST_ASSERT_EQUAL_CHAR_ARRAY("Monday",getName(1),8);
+ TEST_ASSERT_EQUAL_CHAR_ARRAY("Tuesday",getName(2),5);
+ TEST_ASSERT_EQUAL_CHAR_ARRAY("Wednesday",getName(3),5);
+ TEST_ASSERT_EQUAL_CHAR_ARRAY("Thursday",getName(4),3);
+ TEST_ASSERT_EQUAL_CHAR_ARRAY("Friday",getName(5),4);
+ TEST_ASSERT_EQUAL_CHAR_ARRAY("Saturday",getName(6),4);
 }
 
 void Test_isLeapYear(){
