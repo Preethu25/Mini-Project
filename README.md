@@ -1,3 +1,5 @@
+# Calendar_App
+
 [![C/C++ CI - Build Status](https://github.com/Preethu25/Mini-Project/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Preethu25/Mini-Project/actions/workflows/c-cpp.yml)
 
 [![Code Quality - Static Code - Cppcheck](https://github.com/Preethu25/Mini-Project/actions/workflows/cpp_check.yml/badge.svg)](https://github.com/Preethu25/Mini-Project/actions/workflows/cpp_check.yml)
@@ -6,7 +8,6 @@
 
 [![Unit Testing](https://github.com/Preethu25/Mini-Project/actions/workflows/unit-test.yml/badge.svg)](https://github.com/Preethu25/Mini-Project/actions/workflows/unit-test.yml)
 
-# Calendar_App
 
 ## Introduction 
 Mini-project to display calendar dynamically and add events/notes to dates and to search events which are stored.
